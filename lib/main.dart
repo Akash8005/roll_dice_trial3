@@ -1,24 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice_trial3/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-            colors: [
-              Colors.deepOrange,
-              Colors.orange,
-            ],
-          )),
-          child: const Center(
-            child: Text(
-              "Jai Shree Ram",
-              style: TextStyle(fontSize: 100, color: Colors.white),
-            ),
-          ),
-        ),
+        body: GradientContainer(Colors.blue, Colors.green),
       ),
     ),
   );
