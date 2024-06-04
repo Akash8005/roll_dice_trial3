@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:roll_dice_trial3/styled_text.dart';
+import 'package:roll_dice_trial3/dice_roll.dart';
+// import 'package:roll_dice_trial3/styled_text.dart';
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer(this.color1, this.color2, {super.key});
   final Color color1;
   final Color color2;
+
   @override
   Widget build(context) {
     return Container(
@@ -17,7 +19,7 @@ class GradientContainer extends StatelessWidget {
         ),
       ),
       child: const Center(
-        child: StyledText("Ram Laxman Janaki, Jai bolo hanuman ki"),
+        child: DiceRoll(),
       ),
     );
   }
